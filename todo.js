@@ -34,11 +34,9 @@ function createListElement(){
 }
 
 function deleteListItem(){
-		console.log("hi");
-		this.closest(".list-group-item").remove();
-
-		localStorage.setItem(key, JSON.stringify(ul.innerHTML));
-	}
+	this.closest(".list-group-item").remove();
+	localStorage.setItem(key, JSON.stringify(ul.innerHTML));
+}
 
 function addListAfterClick(){
 	let inputLength = input.value.length;
